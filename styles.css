@@ -1,0 +1,126 @@
+/* styles.css */
+
+/* General Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+header img {
+  width: 100%;
+  height: 350px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Order.html Specific Styles */
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1 1 50%;
+  padding: 10px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  margin-top: 10px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.social-media img {
+  width: 20px;
+}
+
+/* Menu.html Specific Styles */
+
+.pizza {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pizza {
+  flex: 1 0 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pizza img {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 568px) {
+  nav ul {
+    flex-direction: column;
+  }
+  
+  .pizzas {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 10px 0;
+  }
+  
+  .pizza {
+    flex: 0 0 auto;
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Cheech's Pizza Parlor - Menu</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="order.html">Order Online</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="#">Our Location</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Order Online</h1>
+    <form>
+      <div class="flex-container">
+        <div class="column">
+          <label for="firstName">Customer First Name</label>
+          <input type="text" id="firstName" name="firstName">
+
+          <label for="lastName">Customer Last Name</label>
+          <input type="text" id="lastName" name="lastName">
+
+          <label for="phone">Customer Phone</label>
+          <input type="tel" id="phone" name="phone">
+
+          <label for="pizza">Pizza Choice</label>
+          <select id="pizza" name="pizza">
+            <option value="pepperoni">Pepperoni</option>
+            <option value="cheese">Cheese</option>
+            <option value="vegetable">Vegetable</option>
+            <option value="supreme">Supreme</option>
+            <option value="margherita">Margherita</option>
+            <option value="hawaiian">Hawaiian</option>
+          </select>
+
+          <label for="quantity">Quantity</label>
+          <input type="number" id="quantity" name="quantity">
+        </div>
+
+        <div class="column">
+          <label for="testimonial">Customer Testimonial</label>
+          <textarea id="testimonial" name="testimonial"></textarea>
+
+          <div class="social-media">
+            <a href="#"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram.png" alt="Instagram"></a>
+          </div>
+
+          <p>Extra content goes here</p>
+        </div>
+      </div>
+
+      <button type="submit">Place Order</button>
+    </form>
+  </main>
+</body>
+</html>
